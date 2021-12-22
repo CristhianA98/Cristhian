@@ -104,12 +104,7 @@
     font-weight: 900;
 }
 
-/* ABOUT SECTION */
-
-section{
-    padding: 50px 0;
-}
-
+/* ALL SECTION CONTENT */
 .tittle{
     position: relative;
     text-align: center;
@@ -119,6 +114,7 @@ section{
     margin-bottom: 60px;
     padding-bottom: 15px;
     font-family: 'Prompt', sans-serif;
+    z-index: 888;
 }
 
 .tittle::before{
@@ -130,9 +126,17 @@ section{
     height: 4px;
     background: #1AB595;
     transform: translateX(-50%);
+
 }
 
-.tittle::after{
+
+/* ABOUT SECTION */
+
+section{
+    padding: 50px 0;
+}
+
+.about .tittle::after{
     content: "¿Quién soy?";
     position: absolute;
     bottom: -12px;
@@ -144,7 +148,7 @@ section{
     transform: translate(-50%);
 }
 
-.about .about-content{
+.about .about-content, .services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -171,6 +175,7 @@ section{
     font-weight: 600;
     color: #2B3C4D;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about .about-content .rigth .text span{
@@ -201,6 +206,25 @@ section{
     border:2px solid #2B3C4D;
     transition: all .4s ease-in;
 }
+
+/* SERVICES SECTION START */
+.services{
+    background: rgba(224,224,224);
+    color: #2B3C4D;
+}
+
+.services .tittle::after{
+    content: "What I provide?";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 16px;
+    color: #2B3C4D;
+    padding: 5px;
+    background: rgba(224,224,224);
+    transform: translate(-50%);
+}
+
 
 /* -------------------------------------------------------------------------
 ---------------------- RESPONSIVE MEDIA
@@ -246,7 +270,8 @@ section{
 
     .navbar .menu li a{
         display: inline-block;
-        margin: 17px 0;
+        padding-top: 15px;
+        margin: 20px 0;
         font-size: 26px;
         color: #fff !important;
     }
@@ -294,7 +319,6 @@ section{
         height: 340px;
     }
 
-    
     .max-width{
         max-width: 968;
     }
