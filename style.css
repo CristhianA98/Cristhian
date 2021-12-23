@@ -114,7 +114,6 @@
     margin-bottom: 60px;
     padding-bottom: 15px;
     font-family: 'Prompt', sans-serif;
-    z-index: 888;
 }
 
 .tittle::before{
@@ -126,7 +125,6 @@
     height: 4px;
     background: #1AB595;
     transform: translateX(-50%);
-
 }
 
 
@@ -143,7 +141,7 @@ section{
     left: 50%;
     font-size: 16px;
     color: #2B3C4D;
-    padding: 5px;
+    padding: 3px;
     background: #fff;
     transform: translate(-50%);
 }
@@ -163,7 +161,7 @@ section{
     height: 375px;
     width: 375px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .about .about-content .rigth{
@@ -220,11 +218,48 @@ section{
     left: 50%;
     font-size: 16px;
     color: #2B3C4D;
-    padding: 5px;
+    padding: 3px;
     background: rgba(224,224,224);
     transform: translate(-50%);
+    z-index: 666;
 }
 
+.services .serv-content .card{
+    width: calc(32% - 20px);
+    background: rgb(190, 190, 190);
+    text-align: center;
+    border-radius: 7px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.services .serv-content .card .box{
+    transition: all .3 ease;
+}
+
+.services .serv-content .card:hover{
+    background: rgba(26,181,149,0.2);
+}
+
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card i{
+    font-size: 33px;
+    color: #1AB595
+}
+
+.services .serv-content .card:hover i{
+    color: #2B3C4D;
+}
+
+.services .serv-content .card .text{
+    font-size: 23px;
+    font-weight: 900;
+}
 
 /* -------------------------------------------------------------------------
 ---------------------- RESPONSIVE MEDIA
