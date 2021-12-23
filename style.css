@@ -224,6 +224,7 @@ section{
     z-index: 666;
 }
 
+
 .services .serv-content .card{
     width: calc(32% - 20px);
     background: rgb(190, 190, 190);
@@ -374,5 +375,15 @@ section{
     
     .about .about-content .left{
         flex: 100%;
+    }
+
+    .services .serv-content .card{
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width:968px){
+    .services .serv-content .card{
+        width: 100%
     }
 }
