@@ -400,7 +400,7 @@ section{
 
 .teams .carousel .text{
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 900;
     margin: 10px 0 7px 0;
 }
 
@@ -435,6 +435,8 @@ section{
 /* -------------------------------------------------------------------------
 ---------------------- RESPONSIVE MEDIA
 ----------------------------------------------------------------------------*/
+
+
 @media (max-width:1260px){
 
     .max-width{
@@ -557,5 +559,27 @@ section{
     .skills .skills-content .column{
         width: 100%;
         margin-bottom: 35px;
+    }
+}
+
+
+@media(max-width:500px){
+    .home .home-content .text-1, 
+    .home .home-content .text-3{
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 25px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 34px;
+        font-weight: 900;
+        margin-top: 25px;
+    }
+    
+    .home .home-content .text-3 span{
+        font-size: 32px;
+        color: #1AB595;
+        font-weight: 900;
     }
 }
