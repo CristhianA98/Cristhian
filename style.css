@@ -413,9 +413,10 @@ section{
 }
 
 .owl-dots{
-    display: inline-flex;
-    margin-top: 20px;
-    margin-left: 45%;
+    display: flex !important; 
+    flex-direction: row;   
+    justify-content: center; 
+    margin-top: 25px;
 }
 
 .owl-dot{
