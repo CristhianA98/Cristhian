@@ -564,21 +564,25 @@ section{
 
 
 @media(max-width:500px){
+    .home .home-content{
+        margin-bottom: 75px;
+    }   
+
     .home .home-content .text-1, 
     .home .home-content .text-3{
-        font-size: 30px;
+        font-size: 32px;
         font-weight: 500;
         margin-top: 25px;
     }
     
     .home .home-content .text-2{
-        font-size: 34px;
+        font-size: 36px;
         font-weight: 900;
         margin-top: 25px;
     }
     
     .home .home-content .text-3 span{
-        font-size: 32px;
+        font-size: 34px;
         color: #1AB595;
         font-weight: 900;
     }
