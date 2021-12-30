@@ -8,6 +8,10 @@
     font-family: 'Prompt',sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* -------------------------------------------------------------------------
 ---------------------- NAVBAR
 ----------------------------------------------------------------------------*/
@@ -45,13 +49,13 @@
 .navbar .menu li{
     list-style: none;
     display: inline-block;
-    font-size: 17px;
-    font-weight: 700;
-    margin-left: 25px;
-    font-family: 'Prompt', sans-serif;
 }
 
 .navbar .menu li a{
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 25px;
     color: #2B3C4D;
     transition: color .4s ease;
 }
@@ -134,7 +138,7 @@ section{
 }
 
 .about .tittle::after{
-    content: "¿Quién soy?";
+    content: "Who am I";
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -557,6 +561,56 @@ section{
     color: #1AB595;
     background: #fff;
 }
+
+/* Foooter Section */
+footer{
+    background: #1AB595;
+    padding: 20px 23px;
+    text-align: center;
+    font-size: 15px;
+    color: #2B3C4D;
+}
+
+footer span a{
+    color: #2B3C4D;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer span a:hover{
+    text-decoration:underline;
+}
+
+/* SCROLL UP */
+.scroll-up{
+    position: fixed;
+    height: 20px;
+    width: 18px;
+    background: #2B3C4D;
+    right: 20px;
+    bottom: 15px;
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 32px;
+    border-radius: 8px;
+    opacity: 0;
+    pointer-events: auto;
+    transition: all .7s ease;
+}
+
+.scroll-up.show{
+    height: 40px;
+    width: 38px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up i{
+    cursor: pointer;
+}
+
 /* -------------------------------------------------------------------------
 ---------------------- RESPONSIVE MEDIA
 ----------------------------------------------------------------------------*/

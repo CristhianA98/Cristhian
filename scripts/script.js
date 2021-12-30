@@ -16,6 +16,7 @@ addEventListener("load",()=>{
         let textLogo = document.querySelector(".navbar .logo a");
         let textOptions = document.querySelectorAll(".navbar .menu li a");
         let buttonBar = document.querySelector(".menu-btn");
+        let scrollUp = document.querySelector(".scroll-up");
 
         if(scroll > 20 ){
             navbar.style.background = "#2B3C4D";
@@ -34,17 +35,28 @@ addEventListener("load",()=>{
                 option.style.color = "#2B3C4D"; 
             });
         }
+
+        /* SHOW SCROLL */
+        if(scroll > 500){
+            scrollUp.classList.add("show");
+        }else{
+            scrollUp.classList.remove("show");
+        }
+
+        /* Slide - UP */
+        $(".scroll-up").click(function(){
+            window.scroll(0,0);
+        });
     });
 
     /* BUTTON BARS - NAVBAR */
-    let buttonBar = document.querySelector(".menu-btn");
-
-    buttonBar.addEventListener("click",()=>{
+    $(".menu-btn").click(function(){
         let navMenu = document.querySelector(".navbar .menu");
         let buttonX = document.querySelector(".menu-btn i");
         navMenu.classList.toggle("active");
         buttonX.classList.toggle("active");
     });
+
 
     /* owl-carousel */
     $(".carousel").owlCarousel({
@@ -67,5 +79,22 @@ addEventListener("load",()=>{
             }
         }
     });
+
+    /* Typing animation Script */
+
+    var typed = new Typed(".typing",{
+        strings:["Systems engineering","Web Developer","Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop:true
+    });
+
+    var typed2 = new Typed(".typing-2",{
+        strings:["Systems engineering","Web Developer","Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
 });
 
